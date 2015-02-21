@@ -1,0 +1,30 @@
+CREATE TABLE USERFILES (
+  id VARCHAR(30),
+  name varchar(45) NOT NULL default '',
+  price double,
+  data BLOB,
+  date varchar(45) default '',
+  user_id varchar(45) default NULL,
+  PRIMARY KEY  (id)
+);
+insert into userfiles(id,name) values('1','balayesu');
+
+CREATE TABLE USERS (
+  Fullname varchar(40), 
+  username varchar(46) NOT NULL default '',
+  password varchar(45) NOT NULL default '',
+  place varchar(45) NOT NULL default '',
+  PRIMARY KEY  (username)
+);
+
+CREATE TABLE RECOMENDATIONS(
+	ID VARCHAR(50) PRIMARY KEY,
+	IMAGE_URL VARCHAR(250),
+	TITLE VARCHAR(200),
+	ISPUBLIC VARCHAR(10),
+	ISFRIEND VARCHAR(10),
+	ISFAMILY VARCHAR(10),
+	USER_ID VARCHAR(10),
+	SQUERY VARCHAR(20)	
+);
+
